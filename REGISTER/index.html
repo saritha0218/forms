@@ -3,6 +3,10 @@
 <style>
 body{
  background-color:gray;
+ padding-left: 500px;
+ padding-right: 500px;
+ padding-top:100px;
+ padding-bottom:100px;
 }
 #un{
     border:2px solid black;
@@ -23,13 +27,21 @@ body{
       border:2px solid black;
       padding-left:30px;
       padding-right:30px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition-duration: 0.4s;
+}
+#submit:hover{
+    background-color: black;
+    color: aliceblue;
+}
 </style>
 </head>
 <body>
-<fieldset style="border:5px solid black;">
-<center><br><br><br><br><br><br><br><br><br><br>
-<marquee scrollamount="20"><h1>Registration Page</h1></marquee>
-<br><br><br>
+    <form style="border: 3px solid black;">
+<center><br><br><div style="background-color: black;color: aliceblue;"><hr style="border:2px solid black;">
+<marquee scrollamount="20"><h1>Registration Page</h1></marquee><hr style="border:2px solid black;"></div>
+<br><br>
 <lable for="un">username:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="text"id="un">
 <br><br>
@@ -47,8 +59,8 @@ body{
 <br><br>
 <br><br><br>
 <input type="submit" value="register" id="submit">
-</center><br><br><br><br><br><br><br><br><br><br><br><br>
-</fieldset>
+</center><br><br>
 
+</form>
 </body>
 </html>

@@ -3,11 +3,22 @@
 <style>
 body{
  background-color:gray;
+ padding-left: 500px;
+ padding-right: 500px;
+ padding-top: 100px;
+ padding-bottom:100px;;
 }
 #submit{
      border:2px solid black;
      padding-left:30px;
      padding-right:30px;
+     padding-top:8px;
+     padding-bottom:8px;
+     transition-duration: 0.4s;
+}
+#submit:hover{
+     background-color: black;
+     color: aliceblue;
 }
 #un{
      border:2px solid black;
@@ -15,21 +26,24 @@ body{
 #pw{
      border:2px solid black;
 }
+#br{
+     line-height:10px;
+}
 </style>
 </head>
-<body>
-<fieldset style="border:5px solid black;">
-<center><br><br><br><br><br><br><br><br><br><br>
-<marquee scrollamount="20"><h1>Log In Page</h1></marquee>
+<body><form style="border:5px solid black;border-radius: 8px;">
+<center><br><br><br><br><div style="background-color: black;"><hr style="border:2px solid black;">
+<marquee scrollamount="20"><h1 style="color: aliceblue;">Log In Page</h1></marquee><hr style="border:2px solid black;"></div>
+
 <br><br><br>
-<lable for="un">username:</label>
+<lable for="un" style="font-size:25px;">username:</label>
 <input type="text"id="un">
-<br>
-<lable for="pw">password:</label>
+<br><br id="br">
+<lable for="pw" style="font-size:25px;">password:</label>
 <input type="password"id="pw">
-<br><br><br><br>
+<br><br>
 <input type="submit" id="submit">
-</center><br><br><br><br><br><br><br><br><br><br><br><br>
-</fieldset>
+</center><br><br><br><br><br>
+</form>
 </body>
 </html>
